@@ -6,7 +6,6 @@ public class UserDto {
 	public String password;
 	
 	
-	
 	public UserDto(String username, String email, String password) {
 		super();
 		this.username = username;

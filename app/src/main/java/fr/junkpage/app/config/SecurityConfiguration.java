@@ -49,6 +49,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
+	
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -60,11 +61,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
 				.and()
 			.authorizeRequests()
-				.antMatchers("/junkdb/**").permitAll()
-				.and()
-			.authorizeRequests()
-				.antMatchers("/api/auth/**").permitAll()
-				.anyRequest().authenticated();
+				.antMatchers("/api/admin/*").authenticated()
+				.antMatchers("/**").permitAll();
 		
         http.headers().frameOptions().sameOrigin();
 

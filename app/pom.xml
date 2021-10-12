@@ -35,7 +35,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<!-- 	postgres :	https://bezkoder.com/spring-boot-jwt-authentication/ -->
+		<!-- postgres : https://bezkoder.com/spring-boot-jwt-authentication/ -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
