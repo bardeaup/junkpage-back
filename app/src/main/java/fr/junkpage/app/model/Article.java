@@ -19,8 +19,8 @@ public class Article {
 	private String refJournalEdition;
 	
 	@ManyToOne
-	@JoinColumn(name="rubrique_code")
-	private Rubrique rubrique;
+	@JoinColumn(name="code_valeur")
+	private ListeValeurs rubrique;
 	
 	private String titreChapeau;
 	private String contenuChapeau;
@@ -40,10 +40,10 @@ public class Article {
 	public void setRefJournalEdition(String refJournalEdition) {
 		this.refJournalEdition = refJournalEdition;
 	}
-	public Rubrique getRubrique() {
+	public ListeValeurs getRubrique() {
 		return rubrique;
 	}
-	public void setRubrique(Rubrique rubrique) {
+	public void setRubrique(ListeValeurs rubrique) {
 		this.rubrique = rubrique;
 	}
 	public String getTitreChapeau() {

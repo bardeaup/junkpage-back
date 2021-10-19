@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+	<changeSet id="02" author="pbardeau">
+		<insert tableName="liste_valeurs">
+			<column name="code_liste_valeurs" value="RUBRIQUES" />
+			<column name="libelle_liste_valeurs" value="Rubriques" />
+			<column name="code_valeur" value="MUSIQUE" />
+			<column name="libelle_valeur" value="Musique" />
+		</insert>
+		<insert tableName="liste_valeurs">
+			<column name="code_liste_valeurs" value="RUBRIQUES" />
+			<column name="libelle_liste_valeurs" value="Rubriques" />
+			<column name="code_valeur" value="ARCHITECTURE" />
+			<column name="libelle_valeur" value="Architecture" />
+		</insert>
+		<insert tableName="liste_valeurs">
+			<column name="code_liste_valeurs" value="RUBRIQUES" />
+			<column name="libelle_liste_valeurs" value="Rubriques" />
+			<column name="code_valeur" value="EN_BREF" />
+			<column name="libelle_valeur" value="En bref" />
+		</insert>
+		<insert tableName="liste_valeurs">
+			<column name="code_liste_valeurs" value="RUBRIQUES" />
+			<column name="libelle_liste_valeurs" value="Rubriques" />
+			<column name="code_valeur" value="EXPOSITIONS" />
+			<column name="libelle_valeur" value="Expositions" />
+		</insert>
+		<insert tableName="liste_valeurs">
+			<column name="code_liste_valeurs" value="RUBRIQUES" />
+			<column name="libelle_liste_valeurs" value="Rubriques" />
+			<column name="code_valeur" value="GASTRONOMIE" />
+			<column name="libelle_valeur" value="Gastronomie" />
+		</insert>
+		<insert tableName="liste_valeurs">
+			<column name="code_liste_valeurs" value="RUBRIQUES" />
+			<column name="libelle_liste_valeurs" value="Rubriques" />
+			<column name="code_valeur" value="TOURISME" />
+			<column name="libelle_valeur" value="Tourisme" />
+		</insert>
+		<insert tableName="liste_valeurs">
+			<column name="code_liste_valeurs" value="RUBRIQUES" />
+			<column name="libelle_liste_valeurs" value="Rubriques" />
+			<column name="code_valeur" value="LITTERATURE" />
+			<column name="libelle_valeur" value="Litérature" />
+		</insert>
+	</changeSet>
+</databaseChangeLog>
